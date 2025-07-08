@@ -1,0 +1,77 @@
+.navBar {
+  font-family: "Poppins", sans-serif;
+  padding: 16px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  background: black;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+}
+
+.logos {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2px;
+  transition: all 0.3s;
+}
+
+.logos:hover {
+  transform: scale(1.08);
+  color: #ffe66d;
+}
+
+.navmenu {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.hover-links {
+  font-weight: 500;
+  color: #e3e8ee;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 6px 18px;
+  border-radius: 24px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.hover-links:hover {
+  background: #fff;
+  color: #1976d2;
+}
+
+.active-links {
+  color: #030303;
+  background: #1976d2;
+  border-radius: 24px;
+  position: relative;
+  text-decoration: none;
+  margin-bottom: 0;
+  padding: 6px 18px;
+}
+
+.active-links::before {
+  display: none;
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #4ecdc4;
+}
+
+
+
